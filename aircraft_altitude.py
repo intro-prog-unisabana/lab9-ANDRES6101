@@ -1,11 +1,13 @@
 from aircraft import Aircraft
 
 def main():
-    model = input("Enter aircraft model:\n")
+    print("Enter aircraft model:")
+    model = input().strip()
     plane = Aircraft(model)
 
     while True:
-        command = input("Enter command (A for ascent, D for descent, X to exit):\n")
+        print("Enter command (A for ascent, D for descent, X to exit):")
+        command = input().strip()
 
         if command == "X":
             break
