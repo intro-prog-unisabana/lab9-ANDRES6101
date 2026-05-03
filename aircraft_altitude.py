@@ -21,7 +21,8 @@ def main():
         elif action == "D":
             plane.descend(feet)
 
-    print(f"Final altitude: {plane.altitude} feet")
+
+    print(f"Final altitude: {-plane.altitude} feet")
 
 
 if __name__ == "__main__":

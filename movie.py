@@ -1,5 +1,3 @@
-# Write your code here!
-
 # FREEZE CODE BEGIN
 class Movie:
     def __init__(self, title, director, year):
@@ -12,22 +10,17 @@ class Movie:
 # FREEZE CODE END
 
 
+def main():
+    title = input()
+    director = input()
+    year = input()
 
-title = input()
-director = input()
-year = input()
-
-movie = Movie(title, director, year)
-print(movie)
+    movie = Movie(title, director, year)
+    print(movie)
 
 
 # FREEZE CODE BEGIN
 if __name__ == "__main__":
-    
-    title = input("Enter the movie title: ")
-    director = input("Enter the director's name: ")
-    year = input("Enter the release year: ")
+    # --- Main Program ---
+    main()
 # FREEZE CODE END
-
-    movie = Movie(title, director, year)
-    print(movie)
