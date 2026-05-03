@@ -17,12 +17,11 @@ def main():
         feet = int(parts[1])
 
         if action == "A":
-            plane.ascend(feet)
+            plane.descend(feet)  
         elif action == "D":
-            plane.descend(feet)
+            plane.ascend(feet)   
 
-
-    print(f"Final altitude: {-plane.altitude} feet")
+    print(f"Final altitude: {plane.altitude} feet")
 
 
 if __name__ == "__main__":
