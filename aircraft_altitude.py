@@ -21,7 +21,6 @@ def main():
         elif action == "D":
             plane.descend(feet)
 
-    # ✔ SIN modificar signo
     print(f"Final altitude: {plane.altitude} feet")
 
 

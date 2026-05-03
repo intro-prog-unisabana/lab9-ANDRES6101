@@ -17,6 +17,7 @@ def main():
         if choice == '1':
             car = create_car_from_input()
             cars[car.car_id] = car
+            print("Car added.")
             print(car)
 
         elif choice == '2':
@@ -28,7 +29,8 @@ def main():
 
             if car_id in cars:
                 cars[car_id].drive(miles)
-                print(cars[car_id])   
+                print("Mileage updated.")
+                print(cars[car_id])
             else:
                 print("Car not found.")
 
@@ -38,7 +40,8 @@ def main():
 
             if car_id in cars:
                 cars[car_id].change_color(new_color)
-                print(cars[car_id])   
+                print("Color updated.")
+                print(cars[car_id])
             else:
                 print("Car not found.")
 
